@@ -1,0 +1,8 @@
+﻿<viewdata model="TestFubuPartialWithAjax.Handlers.Home.HomeViewModel" />
+<html>
+    <head></head>
+    <body>
+        <h1>Here's some markup</h1>
+        # this.Partial<TestFubuPartialWithAjax.Handlers.SubContent.SubContentInputModel>();
+    </body>
+</html>
