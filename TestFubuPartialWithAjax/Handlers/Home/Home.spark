@@ -1,8 +1,23 @@
 ﻿<viewdata model="TestFubuPartialWithAjax.Handlers.Home.HomeViewModel" />
 <html>
-    <head></head>
+    <head>
+        <title>Testing Fubu Partials (Server-side and AJAX)</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    </head>
     <body>
-        <h1>Here's some markup</h1>
+        <h1>Here's the main markup</h1>
         # this.Partial<TestFubuPartialWithAjax.Handlers.SubContent.SubContentInputModel>();
+
+        <a href="#">Click for AJAX call</a>
+        <script type="text/javascript">
+            $(function() {
+                $('a').click(function(event) {
+                    event.preventDefault();
+                    $.get('/', function(markup) {
+                        alert(markup);
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
