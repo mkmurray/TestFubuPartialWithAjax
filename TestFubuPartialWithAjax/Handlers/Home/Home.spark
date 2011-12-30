@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Here's the main markup</h1>
-        # this.Partial<TestFubuPartialWithAjax.Handlers.SubContent.SubContentInputModel>();
+        !{ this.Partial<TestFubuPartialWithAjax.Handlers.SubContent.SubContentInputModel>() }
 
         <a href="#">Click for AJAX call</a>
         <script type="text/javascript">
